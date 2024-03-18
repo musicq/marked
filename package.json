@@ -1,8 +1,8 @@
 {
-  "name": "marked",
-  "description": "A markdown parser built for speed",
-  "author": "Christopher Jeffrey",
-  "version": "12.0.1",
+  "name": "marked-compat",
+  "description": "A compatible version of marked that supports older browser.",
+  "author": "Liang Kui",
+  "version": "1.0.0",
   "type": "module",
   "main": "./lib/marked.cjs",
   "module": "./lib/marked.esm.js",
@@ -33,10 +33,10 @@
     "./marked.min.js": "./marked.min.js",
     "./package.json": "./package.json"
   },
-  "repository": "git://github.com/markedjs/marked.git",
+  "repository": "git://github.com/musicq/marked.git",
   "homepage": "https://marked.js.org",
   "bugs": {
-    "url": "http://github.com/markedjs/marked/issues"
+    "url": "http://github.com/musicq/marked/issues"
   },
   "license": "MIT",
   "keywords": [

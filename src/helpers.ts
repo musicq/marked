@@ -14,6 +14,17 @@ const escapeReplacements: {[index: string]: string} = {
 };
 const getEscapeReplacement = (ch: string) => escapeReplacements[ch];
 
+export const isSupportUnicodeRegex = (() => {
+  try {
+    // eslint-disable-next-line prefer-regex-literals, no-new
+    new RegExp('\\p{P}\\p{S}', 'u');
+  } catch {
+    return false;
+  }
+
+  return true;
+})();
+
 export function escape(html: string, encode?: boolean) {
   if (encode) {
     if (escapeTest.test(html)) {

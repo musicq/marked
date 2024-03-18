@@ -61,7 +61,10 @@ export default defineConfig([
     }],
     plugins: [
       typescript(),
-      babel({ plugins: ['@babel/plugin-transform-unicode-regex'] })
+      babel({
+        extensions: ['.ts'],
+        plugins: ['@babel/plugin-transform-unicode-regex']
+      })
     ]
   }
 ]);
